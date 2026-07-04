@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background: #003333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background:#006666;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        main {
+            margin: 0px;
+            padding: 20px;
+            min-height: 800px;
+            background: #e6ffff;
+            text-align: center;
+            
+        }
+
+        .h1{
+            text-align: center; 
+        }
+        /* Footer */
+        .footer {
+            background:#003333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            bottom: 0;
+            left: 0; 
+            position: fixed;
+            width: 100%
+        }
+
+        /* Tablet View */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                flex: 1 1 50%;
+                text-align: center;
+            }
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                width: 100%;
+                border-top: 1px solid #777;
+            }
+
+            header,
+            main,
+            footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="h1">
+            <div>
+                <h1>Welcome</h1>
+            </div>
+
+        <div class="p">
+            <p>
+                This is the main content area. Resize the browser window to see
+                how the layout adapts to desktop, tablet, and mobile screens.
+            </p>
+        </div>
+    </main>
+
+    <div class="footer">
+    <footer>
+        <p>&copy; 2026 My Responsive Website</p>
+    </footer>
+
+</body>
+</html>
